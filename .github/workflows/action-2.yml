@@ -1,13 +1,13 @@
 name: my-test-action
 
 on:
-  push: [main]
+    push:
 
-Jobs:  
+jobs:  
     builds:
     runs-on: ubuntu-latest
 
     steps:
      -name: run simple hello world command
-       run:echo 'hello world, this is fun'
+      uses: echo 'hello world, this is fun'
   
