@@ -1,0 +1,13 @@
+name: my-test-action
+
+on:
+  push: [main]
+
+Jobs:  
+  builds:
+  runs-on: ubuntu-latest
+
+  steps:
+   -name: run simple hello word command
+    run: echo 'hello world, this is fun'
+  
