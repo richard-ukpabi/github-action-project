@@ -7,9 +7,11 @@ on:
 
  jobs:
    build:
-     runs_on: ubuntu-latest
+     runs-on: ubuntu-latest
 
      steps:
+       - uses: actions/checkout@v4
+            
        - name: run a simple hello script to test this code
          run: echo 'hello world, richard is back'
  
