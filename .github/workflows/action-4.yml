@@ -1,12 +1,14 @@
 name: third action
 
+
+env:
+  cloud: 'cloud_engineer'
+
 on:
   push:
  
   workflow_dispatch:
 
-env:
-  cloud: cloud_engineer 
 
 jobs:
   # This workflow contains a single job called "build"
