@@ -5,15 +5,15 @@ on:
  
  workflow_dispatch:
 
- jobs:
-   build:
-     runs-on: ubuntu-latest
-
-     steps:
-       - uses: actions/checkout@v4
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v4
             
-       - name: run a simple hello script to test this code
-         run: echo 'hello world, richard is back'
+      - name: run a simple hello script to test this code
+        run: echo hello world, richard is back
  
  
  
