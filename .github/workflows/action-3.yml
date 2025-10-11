@@ -1,0 +1,21 @@
+name: third action
+
+on: 
+ push:
+ 
+ workflow_dispatch:
+
+ jobs:
+   build:
+     runs_on: ubuntu-latest
+
+     steps:
+       - name: run a simple hello script to test this code
+         run: echo 'hello world, richard is back'
+ 
+ 
+ 
+ 
+
+ 
+ 
