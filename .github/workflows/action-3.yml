@@ -10,11 +10,11 @@ jobs:
   build:
       runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@v4
-            
+    
       - name: run a simple hello script to test this code
-        run: echo hello world, richard is back
- 
+        run: |
+             echo hello world, richard is back
+             echo Back with a bang
  
  
  
