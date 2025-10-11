@@ -1,0 +1,24 @@
+name: third action
+
+on:
+ 
+ workflow_dispatch:
+
+env:
+  cloud: cloud_engineer 
+
+jobs:
+  # This workflow contains a single job called "build"
+  shell_script_command:
+      runs-on: ubuntu-latest
+      
+      steps:
+          - name: run basic hello world command
+            run: echo 'hello world, i am grateful to be a $cloud'
+          
+    
+          - name: run a simple hello script to test this code
+            run: |
+                 touch index2.txt
+                 echo > i am doing well
+ 
