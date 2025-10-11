@@ -5,9 +5,9 @@ on:
 
 jobs:  
     builds:
-    runs-on: ubuntu-latest
+     runs-on: ubuntu-latest
 
-    steps:
-     -name: run simple hello world command
-      uses: echo 'hello world, this is fun'
+     steps:
+     - name: run simple hello world command
+       run: echo 'hello world, this is fun'
   
